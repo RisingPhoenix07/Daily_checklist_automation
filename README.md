@@ -1,50 +1,66 @@
-# Daily_checklist_automation
-Habit Tracker Automation with rolling chart, based on google sheets
-# Daily Checklist Automation
+# Daily Checklist Dashboard
 
-A Google Sheets + Apps Script project that automates daily habit and study tracking.  
-It adds new columns each day with check-boxes, calculates completion percentages, and updates a rolling 7‑day progress chart.
+A Google Sheets + Apps Script automation for tracking study progress, daily tasks, and weekly averages — complete with gradient formatting and auto‑generated charts.
 
 ---
 
 ## 🚀 Features
-- **[Daily column automation](ca://s?q=Daily_column_automation_in_Google_Sheets)** → auto‑adds a new column with today’s date.
-- **[Checkbox tracking](ca://s?q=Insert_checkboxes_in_Google_Sheets)** → tick off habits and study tasks.
-- **[Progress formulas](ca://s?q=Progress_formula_in_Google_Sheets)** → calculates % complete per day.
-- **[Conditional formatting](ca://s?q=Conditional_formatting_in_Google_Sheets)** → color‑coded feedback (red/yellow/green).
-- **[Rolling 7‑day chart](ca://s?q=Rolling_chart_for_project_progress)** → visualizes the last week’s progress.
+- Automated **Daily Checklist** with segments, tasks, and % Complete rows.
+- **Weekly Progress** sheet with segment tracking + Weekly Average overlay.
+- **Daily Completion** sheet logging overall % per day.
+- Gradient formatting for instant visual feedback.
+- Charts with **percentage axes** (Weekly line chart + Daily column chart).
+- Automatic **daily trigger** at 6 AM to add new columns hands‑free.
 
 ---
 
-## 📂 Project Structure
-- `Code.gs` → Apps Script automation logic.
-- `Daily Checklist` → Google Sheet with habits, study tasks, and progress dashboard.
-- `README.md` → Documentation and usage guide.
+## 📸 Screenshots
+
+<img width="1920" height="1048" alt="Screenshot From 2026-08-03 18-32-46" src="https://github.com/user-attachments/assets/9648bee6-b49a-423b-93bd-c02cb102cfd1" />
+<img width="1920" height="1048" alt="Screenshot From 2026-08-03 18-32-41" src="https://github.com/user-attachments/assets/8184803f-7f1b-472e-9bd1-32b0bb074fad" />
+<img width="1920" height="1048" alt="Screenshot From 2026-08-03 18-32-30" src="https://github.com/user-attachments/assets/329a4aa7-191c-41be-bc06-1ff87a45d98a" />
 
 ---
 
-## 🛠 Setup
-1. Open your Google Sheet.
-2. Go to **Extensions → Apps Script**.
-3. Paste the contents of `Code.gs` into the editor.
-4. Save and run once to grant permissions.
-5. Set a **time‑driven trigger** (e.g., 6 AM daily).
+## ⚙️ Setup
+1. Open your Google Sheet → Extensions → Apps Script.
+2. Paste the full script from this repo into `Code.gs`.
+3. Run `setupDashboard()` once to initialize everything.
+4. Authorize the script when prompted.
+5. Done — your dashboard is live and automated.
 
 ---
 
-## 📊 Example Workflow
-- Morning: Script adds a new column with today’s date.
-- Throughout the day: Tick off tasks/habits.
-- Evening: Dashboard shows % complete and updates the rolling chart.
+> **Important Notice**  
+> For normal, ongoing use, you only need to run `setupDashboard()` once.  
+> That single run:  
+> - Builds all three sheets with your segment/task names  
+> - Sets up the gradient formatting and both charts  
+> - Installs the 6 AM daily trigger  
+>
+> After that, everything is automatic: the trigger fires `addDailyColumn()` every day at 6 AM on its own. You just open the sheet and check off boxes throughout the day.  
+>
+> You’d only manually run something again if:  
+> 1. You change `SEGMENT_NAMES` or `TASK_NAMES` in the script → re‑run `setupDashboard()` to rebuild the checklist with the new layout (this wipes existing data, so only do it when you want a reset).  
+> 2. You want to add test/demo data → run `seedRandomWeekData()`.  
+> 3. Triggers get into a weird state → run `deleteAllTriggers()`, then `setupDashboard()` again to reinstall a clean one.  
+>
+> ### One thing worth checking once  
+> Since you’re switching from test data to real daily use: open **Triggers** in the left sidebar of the Apps Script editor (clock icon) and confirm there’s exactly one trigger listed for `addDailyColumn`, running daily at 6 AM. That confirms `setupDashboard()` installed it correctly.
 
 ---
 
-## 🌟 Future Enhancements
-- **[Weekly average row](ca://s?q=Add_weekly_average_row_in_Google_Sheets)** → track long‑term performance.
-- **[Streak counter](ca://s?q=Add_streak_counter_in_Google_Sheets)** → measure consistency.
-- **[Google Form integration](ca://s?q=Google_Form_progress_tracker)** → log progress from mobile.
+## 🧩 Usage
+- **Daily automation**: Trigger runs `addDailyColumn()` every morning.
+- **Manual refresh**: Run `addDailyColumn()` manually if needed.
+- **Testing**: Use `createTestTrigger()` for minute‑by‑minute testing, then `deleteAllTriggers()` to clean up.
 
 ---
 
-## 📜 License
+## 🛡 License
 MIT License — free to use, modify, and share.
+
+---
+
+## 🤝 Contributing
+Pull requests welcome! For major changes, open an issue first to discuss what you’d like to change.
