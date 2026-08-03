@@ -20,6 +20,8 @@ A Google Sheets + Apps Script automation for tracking study progress, daily task
 <img width="1920" height="1048" alt="Screenshot From 2026-08-03 18-32-41" src="https://github.com/user-attachments/assets/8184803f-7f1b-472e-9bd1-32b0bb074fad" />
 <img width="1920" height="1048" alt="Screenshot From 2026-08-03 18-32-30" src="https://github.com/user-attachments/assets/329a4aa7-191c-41be-bc06-1ff87a45d98a" />
 
+*data generated via seedRandomWeekData()
+
 ---
 
 ## ⚙️ Setup
