@@ -5,24 +5,24 @@
 // You can rename segment or task names from here or from the sheet as well :)
 
 var SEGMENT_NAMES = [
-  "Algorithms Lab",
-  "Circuit Design",
-  "Math Practice",
-  "Psychology Notes",
-  "Guitar Training",
-  "Fitness Routine",
-  "Personal Growth"
+  "Segment 1",
+  "Segment 2",
+  "Segment 3",
+  "Segment 4",
+  "Segment 5",
+  "Segment 6",
+  "Segment 7"
 ];
 
 // Every segment gets this same set of 7 tasks each day.
 var TASK_NAMES = [
-  "Solve 5 problems",
-  "Summarize lecture notes",
-  "Practice 2 circuits",
-  "Write reflection journal",
-  "Play scales 15 min",
-  "Do 20 pushups",
-  "Read 10 pages"
+  "Task 1",
+  "Task 2",
+  "Task 3",
+  "Task 4",
+  "Task 5",
+  "Task 6",
+  "Task 7"
 ];
 
 var NUM_SEGMENTS = SEGMENT_NAMES.length;
