@@ -3,7 +3,7 @@
 // Debugged + optimized
 // -----------------------------
 // You can rename segment or task names from here or from the sheet as well :)
-
+//Default Segment values.
 var SEGMENT_NAMES = [
   "Segment 1",
   "Segment 2",
@@ -25,8 +25,8 @@ var TASK_NAMES = [
   "Task 7"
 ];
 
-var NUM_SEGMENTS = SEGMENT_NAMES.length;
-var TASKS_PER_SEGMENT = TASK_NAMES.length;
+var NUM_SEGMENTS = SEGMENT_NAMES.length; //you can change the length of segments from here.
+var TASKS_PER_SEGMENT = TASK_NAMES.length; //you can change the length of tasks per segment from here.
 
 // Daily Checklist row layout is now fully deterministic: each segment is
 // 1 header row (name + % complete in the same row) followed by its task
