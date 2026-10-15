@@ -2,7 +2,7 @@
 
 A powerful Google Sheets + Apps Script productivity system for tracking study progress, projects, habits, fitness, and personal growth.
 
-**Rising Phoenix** combines a customizable daily checklist, streak tracking, progress analytics, motivational dashboard, and automated reporting into a single self-maintaining workspace. Built around flexible segments and tasks that can be edited at any time without losing your history. 【1-8128eb】
+**Rising Phoenix** combines a customizable daily checklist, streak tracking, progress analytics, motivational dashboard, and automated reporting into a single self-maintaining workspace. Built around flexible segments and tasks that can be edited at any time without losing your history. 
 
 ---
 
@@ -24,7 +24,7 @@ Features:
 - Live dashboard formulas
 - Blue-themed interface
 
-No more empty startup sheet. The first tab becomes a fully functional dashboard. 【1-8128eb】
+No more empty startup sheet. The first tab becomes a fully functional dashboard. 
 
 ---
 
@@ -48,7 +48,7 @@ Features:
 - Automatic completion percentages
 - Unlimited historical tracking
 
-Unlike previous versions, nothing is hardcoded. Segments and tasks are fully configurable. 【1-8128eb】
+Unlike previous versions, nothing is hardcoded. Segments and tasks are fully configurable. 
 
 ---
 
@@ -71,7 +71,7 @@ You can:
 - Add tasks
 - Remove tasks
 
-Historical checkbox data and comments are preserved whenever possible. 【1-8128eb】
+Historical checkbox data and comments are preserved whenever possible. 
 
 ---
 
@@ -84,7 +84,7 @@ Automatically tracks:
 - Weekly averages
 - Performance over time
 
-Includes an automatically generated line chart with weekly average overlay. 【1-8128eb】
+Includes an automatically generated line chart with weekly average overlay.
 
 ---
 
@@ -97,7 +97,7 @@ Tracks:
 - Streak calculations
 - Completion history
 
-The home dashboard pulls its statistics directly from this sheet. 【1-8128eb】
+The home dashboard pulls its statistics directly from this sheet. 
 
 ---
 
@@ -133,7 +133,7 @@ Automatic:
 - Daily completion charts
 - Weekly progress charts
 
-Completion percentages are colorized for instant visual feedback. 【1-8128eb】【2-8513d8】
+Completion percentages are colorized for instant visual feedback. 
 
 ---
 
@@ -154,7 +154,7 @@ A daily trigger runs automatically at:
 6:00 AM
 ```
 
-No manual maintenance required. 【3-5b5b99】【4-da285f】
+No manual maintenance required. 
 
 ---
 
@@ -181,7 +181,6 @@ No manual maintenance required. 【3-5b5b99】【4-da285f】
     (auto-generated helper sheet)
 ```
 
-【1-8128eb】
 
 ---
 
@@ -290,7 +289,7 @@ Setup automatically:
 - Installs triggers
 - Configures formatting
 
-After setup, the workbook becomes fully automated. 【1-8128eb】
+After setup, the workbook becomes fully automated. 
 
 ---
 
@@ -310,7 +309,6 @@ Dashboard
 └── Reset names to defaults
 ```
 
-【1-8128eb】
 
 ---
 
@@ -329,7 +327,7 @@ Creates:
 - Dashboard statistics
 - Chart previews
 
-Perfect for testing before real use. 【1-8128eb】
+Perfect for testing before real use. 
 
 ---
 
@@ -369,7 +367,7 @@ Dashboard
 └── Edit segments & tasks...
 ```
 
-Avoid manually inserting or deleting rows inside the checklist sheet. 【1-8128eb】
+Avoid manually inserting or deleting rows inside the checklist sheet. 
 
 ---
 
@@ -390,7 +388,7 @@ Frequency: Daily
 Time: 6:00 AM
 ```
 
-【3-5b5b99】【4-da285f】
+
 
 ---
 
@@ -408,7 +406,7 @@ Time: 6:00 AM
 | `createTestTrigger()` | Testing automation |
 | `deleteAllTriggers()` | Remove all triggers |
 
-【1-8128eb】
+
 
 ---
 
